@@ -1,0 +1,4 @@
+{% macro input (id) %}
+    <label for="{{ id }}">{{ id }}</label>
+    <input id="{{ id }}" type="text" name="{{ id }}" placeholder="type your {{ id }}" autofocus>
+{% endmacro %}

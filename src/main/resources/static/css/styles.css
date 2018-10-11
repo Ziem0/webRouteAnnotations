@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mali', cursive;
+}
+
+nav {
+    background: khaki;
+    text-align: center;
+    margin-top: 100px;
+    position: fixed;
+}
+
+.footer {
+    background: khaki;
+    text-align: center;
+}
+
+.container, .result, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+

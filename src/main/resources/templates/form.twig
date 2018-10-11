@@ -1,0 +1,24 @@
+{% extends "template.twig" %}
+{% import "macros.twig" as inputs %}
+
+{% set values=["name", "lastName"] %}
+
+{% block content %}
+
+    <form method="post">
+        <h1>Please fullfil this form by POST METHOD</h1>
+        {% for value in values %}
+            {{ inputs.input(value) }}
+        {% endfor %}
+        <input type="submit" value="ENTER" id="submit">
+    </form>
+
+    <form method="get">
+        <h1>Please fullfil this form by GET METHOD</h1>
+        {% for value in values %}
+            {{ inputs.input(value) }}
+        {% endfor %}
+        <input type="submit" value="ENTER" id="submit">
+    </form>
+
+{% endblock %}
